@@ -1,13 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>.panda</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <meta name="description" content=".panda panda4cs" />
+    <meta name="keywords" content="panda, panda4cs, .panda" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="shortcut icon" href="./images/fav_ico.png" />
+
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
   </head>
-  <body>
-    <script src="app.js"></script>
-    <h1>panda</h1>
+  <body class="is-loading">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <section id="main">
+        <header>
+          <span class="avatar"><img src="images/avatar.jpg" alt=""/></span>
+          <h1>Omar Hany</h1>
+          <p>Software Developer</p>
+        </header>
+        <footer>
+          <ul class="icons">
+            <li>
+              <a href="https://github.com/Panda4cs" class="fa-github">GitHub</a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/omar-ahmed-6569a519a/"
+                class="fa-linkedin"
+                >Linked In</a
+              >
+            </li>
+          </ul>
+        </footer>
+      </section>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="copyright">
+          <li>.panda</li>
+          <li><a>panda4cs@gmail.com</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <script>
+      if ("addEventListener" in window) {
+        window.addEventListener("load", function() {
+          document.body.className = document.body.className.replace(
+            /\bis-loading\b/,
+            ""
+          );
+        });
+        document.body.className += navigator.userAgent.match(/(MSIE|rv:11\.0)/)
+          ? " is-ie"
+          : "";
+      }
+    </script>
   </body>
 </html>
