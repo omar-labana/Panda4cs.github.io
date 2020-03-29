@@ -541,3 +541,7 @@ h3 {
         transform: translate3d(0, -100%, 0)
     }
 }
+body {
+min-width:400px;
+    min-height:500px;
+}
