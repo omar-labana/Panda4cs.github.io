@@ -473,6 +473,10 @@ h3 {
         height: 150px;
         margin-top: 40px
     }
+
+    .page-header .content-center.brand {
+        width: 90%
+    }
 }
 
 @keyframes e {
@@ -540,8 +544,4 @@ h3 {
         opacity: 0;
         transform: translate3d(0, -100%, 0)
     }
-}
-body {
-min-width:400px;
-    min-height:1000px;
 }
